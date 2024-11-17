@@ -1,17 +1,17 @@
-terraform {
-  required_providers {
-    azurerm = {
-      source = "hashicorp/azurerm"
-      version = "4.4.0"
-    }
-  }
-}
+# terraform {
+#   required_providers {
+#     azurerm = {
+#       source = "hashicorp/azurerm"
+#       version = "4.4.0"
+#     }
+#   }
+# }
 
-provider "azurerm" {
-  features {}
+# provider "azurerm" {
+#   features {}
 
 
-}
+# }
 
 //https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group
 
