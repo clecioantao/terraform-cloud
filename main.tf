@@ -16,7 +16,7 @@ provider "azurerm" {
 //https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group
 
 resource "azurerm_resource_group" "hcp-teste" {
-  name     = "app-grp"
+  name     = "hcp-teste"
   location = "North Europe"
 }
 
@@ -24,8 +24,8 @@ resource "azurerm_resource_group" "hcp-teste" {
 
 resource "azurerm_storage_account" "hcpteste690201" {
   name                     = "hcpteste690201"
-  resource_group_name      = azurerm_resource_group.appgrp.name
-  location                 = azurerm_resource_group.appgrp.location
+  resource_group_name      = azurerm_resource_group.hcp-teste.name
+  location                 = azurerm_resource_group.hcp-teste.location
   account_tier             = "Standard"
   account_replication_type = "LRS"  
 }
